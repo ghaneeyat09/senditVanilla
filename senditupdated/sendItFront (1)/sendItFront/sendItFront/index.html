@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title> A sendIt project</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+        <script>
+            const token = localStorage.getItem("token");
+    
+    if (token) {
+      window.location.href = "./profile.html";
+    }
+        </script>
+    </head>
+    <body onunload="goBack()">
+       <div id="header">
+        <img class="logo" src="./images/sendItlogo.jpg">
+        <nav id="main-nav">
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="./register.html">register</a></li>
+                <li><a href="./login.html">login</a></li>
+                <li><a href="./about.html">about</a></li>
+            </ul>
+        </nav>
+       </div>
+       <section id="body">
+          <div class="imgContainer">
+              <p class="senditTexts"></p>
+              <button class="learnBtn">learn more</button> 
+          </div>
+          <h1 class="today"></h1>
+       </section>
+        <footer id="footer">
+          <div id="footerCon">
+            <div id="about">
+                <h1>about</h1>
+                <p>SendIt is a superfast delivery company aimed at making life better</p>
+            </div>
+            <div id="contact">
+                <h1>contact</h1>
+                <p>customer service: 08143130290</p>
+                <p>address: No.32 adewole estate, ilorin, kwara state, Nigeria</p>
+            </div>
+            <div id="socials">
+                <h1>socials</h1>
+                <p>you can get to us via our social media handles:</p>
+                <p>instagram: _SenditNow</p>
+                <p>facebook: _SendIt</p>
+                <p>twitter: MySendIt</p>
+            </div>
+          </div>
+          <div id="">
+            <div id="box-line"></div>
+            <ul class="footer-nav">
+                <li>terms of service</li>
+                <li>cookie policy</li>
+                <li>privacy policy</li>
+            </ul>
+        </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="./homepage.js"></script>
+    </body>
+</html>

@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: pink;
+}
+#main-nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(228, 3, 127); 
+}
+#main-nav ul{
+    display: flex;
+}
+#main-nav ul li{
+    padding: 15px 20px;
+    list-style-type: none;
+    color: rgb(248, 241, 244);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    cursor: pointer;
+}
+#main-nav ul li:hover{
+    background-color: rgba(196, 2, 83, 0.6);
+    color: pink;
+    transition: all .2s ease-in-out;
+}
+#main-nav ul li a{
+    text-decoration: none;
+    color: rgb(248, 241, 244);
+}
+#main-nav ul li a:hover{
+    color: pink;
+}
+#main-nav ul li:active{
+    background-color: rgb(240, 39, 39);
+}
+#sub-nav{
+    background-color: rgb(248, 241, 241);
+    width: 100%;
+    height: 50px;
+}
+#sub-nav button{
+    color:rgb(228, 3, 127);
+    font-size: 18px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(248, 241, 241);
+    margin-right: 15px;
+}
+
+#sub-nav button:hover{
+    background-color: rgb(228, 3, 127);
+    color: white;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+#sub-nav button:active{
+    background-color: rgb(139, 4, 78);
+}
+#created-orders{
+    width: 1050px;
+    margin: 50px auto;
+}
+#orderField{
+    margin: auto;
+    width: 400px;
+    display: none;
+}
+
+#orderField input{
+    width: 400px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(228, 3, 127);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#orderSubmit{
+    width: 100px;
+    margin: auto;
+}
+#orderSubmit button{
+    width: 100px;
+    margin-top: 20px;
+    padding: 8px 10px;
+}
+#orderSubmit button:hover{
+    background-color: rgb(160, 158, 158);
+    border: none;
+    outline: none;
+}
+#orderSubmit button:active{
+    background-color: rgb(107, 106, 106);
+}
+::placeholder{
+    color: white;
+    font-size: 16px;
+}
+#created-orders{
+    width: 1350px;
+    margin: auto;
+    margin-top: 40px;
+}
+tbody{
+    transition: linear;
+}
+table{
+    table-layout: fixed;
+    width: 1350px;
+    text-align: center;
+    border:none;
+}
+table, tbody, th, td{
+    table-layout: fixed;
+    border-collapse: collapse;
+    padding: 10px 20px;
+}
+tbody, th, td{
+    border: 1px solid black;
+}
+.orderID{
+    width: 180px;
+}
+.pickLocation{
+    width: 140px;
+}
+.destination{
+    width: 140px;
+}
+.edit{
+    width: 60px;
+}
+.cancel{
+    width: 60px;
+}
+#summary{
+    width: 300px;
+    height: 175px;
+    border: 1px solid black;
+    display: block;
+    color: black;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#summary ul li{
+    padding: 20px;
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    text-transform: capitalize;
+}
+#summary ul li:last-child{
+    border-bottom: none;
+}
+#emptyMsg{
+    width: 430px;
+    margin: auto;
+}
+.emptyMsg{
+    color: red;
+    font-size: 20px;
+}
+#editModal{
+    display: none;
+}
+#amount{
+    width: 150px;
+    margin: auto;
+}
+.amountText{
+    width: 150px;
+    color:rgb(78, 3, 42);
+    margin-top: 20px;
+}
+.amount{
+    margin-top: -8px;
+}
+/*.recMob::-webkit-outer-spin-button,
+.recMob::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}*/
+.weight::-webkit-outer-spin-button,
+.weight::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/**modal*/
+#modal{
+    border: 1px solid black; 
+    width: 300px; 
+    height: 200px;
+    text-align: center;
+    display: none; 
+    background: white;
+    position: fixed;
+    top: 10px;
+    right: 80px;
+    border-radius: 10px;
+
+}
+#modal h2{
+    text-transform: capitalize;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#modal input{
+    height: 20px;
+    width: 220px;
+    border-radius: 3px;
+}
+#modal #btns{
+    margin-left: 160px;
+}
+#modal #btns button{
+    margin-top: 20px;
+    border-radius: 3px;
+    
+}

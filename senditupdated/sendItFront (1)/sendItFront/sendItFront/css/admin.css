@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(252, 210, 217);
+}
+#navBar{
+    background-color: rgb(192, 10, 107);
+    max-height: 45px;
+}
+#navBar ul{
+    display: flex;
+    justify-content: space-around;
+}
+#navBar ul li{
+    padding: 20px;
+    list-style-type: none;
+}
+#navBar #admin-name{
+    color: rgb(252, 210, 217);
+    font-size: 20px;
+    font-family: monospace;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#navBar .home{
+    position: absolute;
+    left: -10px;
+}
+#navBar ul li a{
+    width: 100px; 
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(252, 210, 217);
+    cursor: pointer;
+    text-decoration: none;
+}
+#navBar ul li a:hover{
+    color:rgb(250, 61, 165);
+}
+#navBar ul li a:active{
+    color: rgb(168, 4, 94);
+
+}
+#subNavBar{
+    background-color: rgb(247, 244, 246);
+    padding: 10px;
+}
+#subNavBar ul li{
+    list-style-type: none;
+}
+#subNavBar ul li a{
+    display: block;
+    text-align: right;
+    text-transform: capitalize;
+    color:rgb(192, 10, 107); 
+    cursor: pointer;
+}
+#subNavBar ul li a:hover{
+    color: rgb(250, 61, 165);
+}
+#subNavBar ul li a:active{
+    color: rgb(197, 13, 114);
+}
+.fa-user{
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    display: flex;
+    padding: 0 10px;
+    color: rgb(247, 164, 178);
+}
+.admin{
+    width: 180px;
+}
+.logout{
+    cursor: pointer;
+    position: absolute;
+    left: 100px;
+    color: rgb(252, 210, 217);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.logout:hover{
+    color: rgb(240, 20, 137);
+}
+.logout:active{
+    color: rgb(192, 10, 107)
+}
+table{
+    margin: auto;
+    margin-top: 100px;
+    width: 1350px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+table, th, td{
+    text-align: center;
+    padding: 10px 0;
+}
+th{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.orderid{
+    width: 200px;
+}
+.edit{
+    width: 50px;
+}
+.trash{
+    width: 50px;
+}
+.fa-edit{
+    color:rgb(168, 4, 94);
+}
+.fa-edit:hover{
+    color: rgb(230, 77, 161);
+}
+.fa-edit:active{
+    color:rgb(114, 3, 64)
+}
+.fa-trash{
+    color:rgb(168, 4, 94)
+}
+.fa-trash:hover{
+    color: rgb(230, 77, 161);
+}
+.fa-trash:active{
+    color:rgb(114, 3, 64)
+}
+.presentLoc{
+    cursor: pointer;
+}
+.userid{
+    width: 200px;
+}

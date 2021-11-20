@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title> A sendIt project register page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body class="regBody">
+        <div id="logoCon">
+          <img class="reglogo" src="./images/sendItlogo.jpg">
+        </div>
+        <h1>welcome to SendIt</h1>
+        <div id="container">
+        <div id="form">
+        <form  class="form" autocomplete="off">
+            <h2>First Name</h2>
+               <input class="fname" type='text' name="fname" required/>
+             <h2>Last Name</h2>
+               <input class="lname" type='text' name="lname" required/>
+             <h2>Username</h2>   
+               <input class="username" type='text' name="uname" >
+             <h2>Mobile No</h2>
+               <input class="mobile" type='text' name="number" required/>
+               <p class="errMessage"></p> 
+               <p class="instruction"></p>   
+             <h2>Email</h2>
+               <input class="ename" type='text' name="email" required/>
+               <p class="notification"></p>
+             <h2>Home Address</h2>
+               <input id="hmAddress" class="hmAddress" type="text" placeholder = "" name="homeAddress" required/>
+             <h2>Password</h2>
+               <input class="passcode" type='password' name="password" required/>
+               <p class="passLenght"></p>
+             <h2>Confirm Password</h2>
+               <input class="conpass" type='password' name="conPassword" required/>
+               <p class="passMsg"></p> 
+             <button class="signup-btn">signup</button>
+             <p class="already">already have an account?<a class="signin" href="./login.html">login</a></p>
+             <p class="homepage"><a href="./index.html">back to the homepage</a></p>
+        </form>
+        </div>
+        </div>
+        <script src="./register.js"></script>
+    </body>
+
+    <script>
+      function initMap(){
+         const homeAddress= document.getElementById('hmAddress');
+
+         const autocompletePickup = new google.maps.places.Autocomplete(homeAddress);
+      }
+  </script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3FQeb4_K4bYBx-R_6W6HbxLhMWRH6Unc&libraries=places&callback=initMap"></script>
+  
+
+</html>

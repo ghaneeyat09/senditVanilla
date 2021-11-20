@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title>profile page</title>
+        <link rel="stylesheet" href="./css/profile.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+        <script>
+          const token = localStorage.getItem("token");
+  
+  if (!token) {
+    window.location.href = "./login.html";
+  }
+  </script>
+    </head>
+    <body onunload="goback()">
+        <div id="main-nav">
+            <ul>
+                <li class="logOut">Logout</li>
+                <li><span class="user"></span></li>
+            </ul>
+        </div>
+        <div id="sub-nav">
+            <button class="createBtn">create order</button>
+            <!--button class="getOrders">view orders</button-->
+        </div>
+        <div id="summary">
+            <ul>
+                <li>total number of orders: <span class="totalOrders"></span></li>
+                <li>number of orders delivered: <span class="deliveredOrders"></span></li>
+                <li>number of orders on transit: <span class="ordersOnTransit"></span></li>
+            </ul>
+        </div>
+        <form id="orderField" class="show">
+            <input type="text" id="pickup" class="pickup" placeholder="Pickup Location">
+            <input type="text" id="destination" class="destination" placeholder="Destination">
+            <input type="text" class="recName" placeholder="Recipient Name">
+            <input type="text" class="recMob" placeholder="Recipient Mobile no.">
+            <p class="errorMsg"></p>
+            <input type="number" class="weight" placeholder="Parcel Weight(kg)">
+            <div id="amount">
+              <h1 class="amountText">Amount</h1>
+            </div>
+            <input type="text" class="amount">
+            
+            <div id="orderSubmit">
+               <button class="orderSubmit" type="submit">submit</button>
+            </div>
+        </form><br>
+
+        <!--div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Edit Order Destination</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <input class="modalTextInput form-control" id="newDest" placeholder="Enter new Destination" />
+                </div>
+                <div class="modal-footer">
+                  <button type="button" id="saveEdit" class="saveEdit btn btn-primary" data-dismiss="modal">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div-->
+        <div id="modal">
+          <h2>enter a new destination</h2></br>
+          <input type="text" id="nnnDest"/><br/>
+          <div id="btns">
+            <button class="ndCancel">cancel</button>
+            <button class="ndSubmit">submit</button>
+          </div>
+        </div>
+        <div id="created-orders">
+            <table border=1 class="table">
+                <tr>
+                    <th class="orderID">orderID</th>
+                    <th class="pickLocation">pickup location</th>
+                    <th class="destination">destination</th>
+                    <th>recipient name</th>
+                    <th>recipient mobile no.</th>
+                    <th>order status</th>
+                    <th class="edit" >edit destination</th>
+                    <th class="cancel">cancel order</th>
+                </tr>
+                <tbody class="tbody"></tbody>
+                <!--tr>
+                    <td></td>
+                </tr-->
+            </table>
+            <div id="emptyMsg">
+              <p class="emptyMsg"></p>
+            </div>
+        </div>
+
+        <script src="./profile.js"></script>
+    </body>
+    <script>
+        function initMap(){
+           const pickup = document.getElementById('pickup');
+           const destination = document.getElementById('destination');
+           const newDest = document.getElementById('nnnDest');
+           //const promptDest = document.getElementsByClassName('promptDest');
+
+           const autocompletePickup = new google.maps.places.Autocomplete(pickup);
+           const autocompleteDestination = new google.maps.places.Autocomplete(destination);
+           const autocompletenDest = new google.maps.places.Autocomplete(newDest);
+           //const autocompletePrompDest = new google.maps.places.Autocomplete(promptDest);
+        }
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3FQeb4_K4bYBx-R_6W6HbxLhMWRH6Unc&libraries=places&callback=initMap"></script>
+</html>

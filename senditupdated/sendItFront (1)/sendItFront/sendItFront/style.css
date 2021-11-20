@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(250, 225, 240);
+    width: 100%;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    padding-top: 0;
+    box-shadow: 3px 3px rgb(192, 192, 192);
+}
+.imgContainer{
+    background-image: url('./images/iLikey.jpeg');
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 800px;
+    margin: 10px auto;
+
+}
+.senditTexts{
+    color: rgb(43, 7, 24);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 230px;
+    background-color: rgba(250, 225, 240, 0.3);
+    transition: all 3s ease-in-out;
+    position: relative;
+    animation: text 3s 1;
+}
+@keyframes text {
+    0%{
+        color: none;
+        margin-bottom: -40px;
+        transition: ease-in-out;
+    }
+}
+#body{
+    text-align: center;
+}
+.learnBtn{
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 6px 0 10px 0;
+    border: none;
+    background-color: rgba(231, 66, 143);
+    font-size: 18px;
+    text-transform: capitalize;
+    outline: none;
+
+}
+.learnBtn:hover {
+    background-color:rgb(231, 66, 143, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+.learnBtn:active{
+    background-color:rgba(80, 25, 51, 0.589);
+
+}
+#header{
+    background-image: repeating-linear-gradient(180deg, rgb(87, 2, 45), rgb(231, 66, 143));
+}
+#main-nav{
+    position: absolute;
+    top: 50px;
+    left: 480px;
+}
+@media screen and (max-width: 883px){
+    #main-nav{
+        position: absolute;
+        top: 50px;
+        left: 400px;
+        transition: all 0.2s ease-in-out;
+    }
+}
+#main-nav ul{
+    display: flex;
+}
+#main-nav li{
+    list-style-type: none;
+    padding: 20px;
+}
+
+#main-nav li a{
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white;
+}
+#main-nav li a:hover {
+    color: rgb(187, 183, 183);
+}
+#footer{
+    margin-top: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-image: repeating-linear-gradient(900deg, rgb(231, 66, 143), rgb(87, 2, 45));
+}
+#footerCon{
+    padding: 10px;
+    display: flex;
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+#footer h1{
+    text-transform: capitalize;
+    font-family: serif;
+    font-size: 27px;
+    color: white;
+}
+#footer h1:hover{
+    color:rgb(175, 170, 170);
+}
+#footer p{
+    color: rgb(240, 232, 240);
+}
+#about{
+    padding: 15px;
+    width: 270px;
+}
+#contact{
+    padding: 15px;
+    width: 250px;
+}
+#socials{
+    padding: 15px;
+    width: 300px;
+}
+#box-line{
+    border: 1px solid rgb(243, 127, 185);
+}
+.footer-nav{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.footer-nav li{
+    padding: 15px 15px;
+    list-style-type: none;
+    text-transform: capitalize;
+    color:rgb(209, 63, 136)
+}
+
+@media screen and (max-width: 500px){
+    #header{
+        height: 330px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+        margin-top: 30px;
+        margin-left: 200px;
+        padding-top: 0;
+        border-radius: 10px 0 20px 0;
+        box-shadow: 3px 3px rgb(192, 192, 192);
+    }
+    #main-nav{
+        position: absolute;
+        top: 150px;
+        left: 120px;
+    }
+    #main-nav ul{
+        display: block;
+    }
+    #main-nav li{
+        list-style-type: none;
+        padding: 8px 80px;
+        text-align: center;
+        border: 0 solid rgb(231, 66, 143);
+        margin-top: 5px;
+        background-color: rgba(231, 66, 143, 0.6);
+    }
+    .senditTexts{
+        color: rgb(43, 7, 24);
+        font-size: 25px;
+        text-align: center;
+        padding-top: 230px;
+        background-color: rgba(250, 225, 240, 0.3);
+        transition: all 3s ease-in-out;
+        width: 470px;
+        position: absolute;
+        left: 5px;
+        animation: text 3s 1;
+    }
+    .learnBtn{
+        margin-top: 300px;
+        text-align: center;
+        padding: 10px 30px;
+        border-radius: 6px 0 10px 0;
+        border: none;
+        background-color: rgba(231, 66, 143);
+        font-size: 18px;
+        text-transform: capitalize;
+        position: absolute;
+        right: 165px;
+    
+    }
+    #footerCon{
+        padding: 10px;
+        display: block;
+        width: 320px;
+        text-align: center;
+        margin: auto;
+
+    }
+    #footer h1{
+        text-transform: capitalize;
+        font-family: serif;
+        font-size: 27px;
+        color: white;
+    }
+    .footer-nav{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+
+
+/***register page***/
+
+.regBody{
+    background-image: repeating-linear-gradient(180deg, rgb(231, 66, 143), rgb(53, 6, 28));
+}
+#container{
+    background-color: rgb(245, 219, 231);
+    width: 600px;
+    height: 1050px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+.regBody > h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'do hyeon';
+    text-transform: capitalize;
+}
+.reglogo{
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    padding-top: 0;
+    box-shadow: 3px 3px rgb(192, 192, 192);
+}
+#logoCon{
+    width: 80px;
+    margin: auto;
+}
+input{
+    width: 545px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(231, 66, 143);
+    background-color: rgb(245, 219, 231);
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-weight: 400;
+    font-family: monospace;
+    color: rgb(230, 27, 122);
+}
+form{
+    margin-left: 20px;
+}
+form > h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 35px;
+}
+.signup-btn{
+    width: 560px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgb(231, 66, 143);
+    text-transform: uppercase;
+    font-size: 18px;
+    color: rgb(245, 219, 231);
+    outline: none;
+    border: none;
+}
+.signup-btn:hover{
+    background-color: rgb(189, 67, 124);
+    transition: all 0.2s ease;
+}
+.signup-btn:active{
+    background-color: rgb(231, 8, 112);
+    transition: all .2s ease;
+}
+.already{
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+.signin{
+    margin-left: 5px;
+    text-decoration: none;
+    background-color: rgb(231, 66, 143);
+    color: rgb(245, 219, 231);
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+.signin:hover{
+    background-color: rgb(189, 67, 124);
+    transition: all .2s ease;
+}
+.signin:active{
+    background-color: rgb(231, 8, 122);
+}
+.instruction{
+    color: green;
+}
+
+
+
+/****login page styles*******/
+.loginlogo{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 3px;
+    padding-top: 0;
+    box-shadow: 0 0 5px rgb(175, 174, 174);
+}
+#loginBody{
+    background-image: repeating-linear-gradient(180deg, rgb(231, 6, 143), rgb(53, 6, 28));
+}
+#wrapper{
+    width: 600px;
+    height: 800px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(245, 219, 213);
+    border-radius: 15px;
+}
+.container{
+    width: 500px;
+    margin: auto;
+}
+#company-name{
+    width: 498px;
+    height: 100px;
+    border: 3px solid rgb(87, 2, 45);
+    border-bottom: none;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: serif;
+    font-size: 30px;
+    color: rgb(71, 3, 44);
+    text-transform: uppercase;
+}
+#company-name p{
+    font-size: 16px;
+    color: rgb(231, 66, 143);
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+#loginField{
+    margin: auto;
+}
+fieldset{
+    width: 500px;
+    height: 420px;
+    margin-top: 0;
+    border: 2px solid rgb(39, 1, 20);
+}
+legend{
+    margin: auto;
+}
+
+.fa-user-circle{
+    font-size: 90px;
+    color: rgb(37, 1, 18);
+}
+.fa-user-circle:hover{
+    color: rgb(231, 66, 143);
+}
+.email{
+    width: 450px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid rgb(241, 129, 182);
+    padding-top: 10px;
+    margin-left: 15px;
+    color: rgb(231, 66, 143);
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'do hyeon';
+
+}
+.email-head{
+    margin-top: 40px;
+    padding-left: 15px;
+    color: rgb(59, 2, 31);
+    font-size: 30px;
+}
+.password-head{
+    margin-top: 40px;
+    padding-left: 15px;
+    color: rgb(39, 2, 21);
+    font-size: 30px;
+}
+.password{
+    width: 450px;
+    border: none;
+    border-bottom: 2px solid rgb(241, 129, 182);
+    padding-top: 10px;
+    margin-left: 15px;
+    background: none;
+    color: rgb(253, 69, 155);
+    cursor: pointer;
+    font-family: 'do hyeon';
+}
+.loginBtn{
+    position: absolute;
+    top: 720px;
+    padding: 10px 100px;
+    color: rgb(243, 87, 160);
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    background-color: rgb(116, 7, 61);
+    border: none;
+    outline: none;
+    
+}
+.loginBtn:hover{
+    background-color: rgb(248, 123, 181);
+    color: rgb(116, 7, 61);
+    transition: all 0.2s ease;
+}
+.loginBtn:active{
+    background-color: rgb(161, 19, 90);
+    transition: none;
+}
+#loginBtn{
+    width: 250px;
+    margin: auto;
+}
+.motto{
+    text-align: center;
+}
+.noAccount{
+    margin-top: 40px;
+    text-align: right;
+}
+.loginReg{
+    text-decoration: none;
+    background-color: rgb(116, 7, 61);
+    color: rgb(248, 138, 189);
+    margin-left: 10px;
+    padding: 4px 15px;
+    border-radius: 5px;
+}
+.loginReg:hover{
+    background-color: rgb(248, 138, 189);
+    color: rgb(116, 7, 61);
+    transition: all 0.2s ease;
+}
+.loginReg:active{
+    background-color: rgb(196, 54, 125);
+}
+.homepage{
+    text-align: right;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.homepage a{
+    text-decoration: none;
+    color: rgb(19, 1, 18);
+}
+.homepage a:hover{
+    color: rgb(231, 66, 143);
+    transition: all .2s ease;
+}
+.homepage a:active{
+    color: rgb(170, 5, 82);
+}
